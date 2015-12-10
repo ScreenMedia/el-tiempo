@@ -1,6 +1,6 @@
 {
-  "name": "PetSociality",
-  "description": "Tu mascota más social que nunca.",
+  "name": "ElTiempo-ScreenMedia",
+  "description": "Pantalla con estado del tiempo y marca",
   "version": "0.1.0",
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
@@ -16,6 +16,7 @@
   },
   "scripts": {
     "public": "mkdir -p public/{js,css,php,img}",
+    "public": "mkdir public\\js public\\css public\\php public\\img",
     "build-js": "NODE_PATH=. browserify -t [ babelify --presets [ es2015 ] ] src/js/app.js > public/js/app.js",
     "copy-files": "cp src/css/app.css public/css/app.css && cp src/index.html public/index.html",
     "build": "npm run public && npm run build-js && npm run copy-files",
