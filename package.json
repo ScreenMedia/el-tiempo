@@ -15,7 +15,7 @@
     "browserify": "^12.0.1"
   },
   "scripts": {
-    "public": "mkdir -p public/{js,css,php,img}"
+    "public": "mkdir -p public/{js,css,php,img}",
     "build-js": "NODE_PATH=. browserify -t [ babelify --presets [ es2015 ] ] src/js/app.js > public/js/app.js",
     "copy-files": "cp src/css/app.css public/css/app.css && cp src/index.html public/index.html",
     "build": "npm run public && npm run build-js && npm run copy-files",
