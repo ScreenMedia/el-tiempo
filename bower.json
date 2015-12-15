@@ -1,36 +1,37 @@
 {
-	"name": "initiacueto",
-	"homepage": "http://github.com/DiMaNacho/Initiacueto.git",
-	"authors": [
-		"DiMaNacho <dimanacho@obrusly.com>"
-	],
-	"license": "MIT",
-	"private": true,
-	"dependencies": {
-		"bootstrap-sass": "3.3.6"
-	},
-	"overrides": {
-		"bootstrap-sass": {
-			"main": [
-				"./assets/stylesheets/_bootstrap.scss",
-				"./assets/javascripts/bootstrap/transition.js",
-				"./assets/javascripts/bootstrap/alert.js",
-				"./assets/javascripts/bootstrap/button.js",
-				"./assets/javascripts/bootstrap/carousel.js",
-				"./assets/javascripts/bootstrap/collapse.js",
-				"./assets/javascripts/bootstrap/dropdown.js",
-				"./assets/javascripts/bootstrap/modal.js",
-				"./assets/javascripts/bootstrap/tooltip.js",
-				"./assets/javascripts/bootstrap/popover.js",
-				"./assets/javascripts/bootstrap/scrollspy.js",
-				"./assets/javascripts/bootstrap/tab.js",
-				"./assets/javascripts/bootstrap/affix.js",
-				"./assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
-				"./assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
-				"./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
-				"./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
-				"./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
-			]
-		}
-	}
+  "name": "initiacueto",
+  "homepage": "http://github.com/DiMaNacho/Initiacueto.git",
+  "authors": [
+    "DiMaNacho <dimanacho@obrusly.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.3.6",
+    "simpleWeather": "~3.0.2"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "./src/stylesheets/_bootstrap.scss",
+        "./src/javascripts/bootstrap/transition.js",
+        "./src/javascripts/bootstrap/alert.js",
+        "./src/javascripts/bootstrap/button.js",
+        "./src/javascripts/bootstrap/carousel.js",
+        "./src/javascripts/bootstrap/collapse.js",
+        "./src/javascripts/bootstrap/dropdown.js",
+        "./src/javascripts/bootstrap/modal.js",
+        "./src/javascripts/bootstrap/tooltip.js",
+        "./src/javascripts/bootstrap/popover.js",
+        "./src/javascripts/bootstrap/scrollspy.js",
+        "./src/javascripts/bootstrap/tab.js",
+        "./src/javascripts/bootstrap/affix.js",
+        "./src/fonts/bootstrap/glyphicons-halflings-regular.eot",
+        "./src/fonts/bootstrap/glyphicons-halflings-regular.svg",
+        "./src/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+        "./src/fonts/bootstrap/glyphicons-halflings-regular.woff",
+        "./src/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    }
+  }
 }
