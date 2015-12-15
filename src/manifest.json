@@ -14,10 +14,7 @@
 		}
 	},
 	"paths": {
-		"source": "src/",
-		"dist": "public/"
-	},
-	"config": {
-		"devUrl": "initiacueto:8888"
+		"source": "./src/",
+		"dist": "./public/"
 	}
 }

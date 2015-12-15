@@ -1,5 +1,8 @@
 body {
-	background: green;
+	background: url(../img/bg-lg.jpg) center center transparent;
+	background-size: auto 100%;
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
 #tiempo {
@@ -8,25 +11,20 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 
-	h2 {
-		margin: 0 0 8px;
-		color: #fff;
-		font-size: 100px;
-		font-weight: 300;
-		text-align: center;
-		text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-	}
-
 	ul {
+		display: flex;
 		margin: 0;
 		padding: 0;
 
 		li {
-			background: #fff;
 			background: rgba(255,255,255,0.90);
-			padding: 20px;
-			display: inline-block;
 			border-radius: 5px;
+			list-style: none;
+			padding: 20px;
+
+			span {
+				display: block;
+			}
 		}
 	}
 

@@ -209,7 +209,7 @@ gulp.task('fonts', function() {
 // ### Images
 // `gulp images` - Run lossless compression on all the images.
 gulp.task('images', function() {
-  return gulp.src(globs.images)
+  return gulp.src(path.source + 'img/**/*')
     .pipe(imagemin({
       progressive: true,
       interlaced: true,
@@ -233,7 +233,7 @@ gulp.task('jshint', function() {
 // ### Template
 // `gulp template` - Mueve a dist los archivos php y html y ejecuta un reload en browserSync.
 gulp.task('template', function() {
-  return gulp.src([path.source + '/php/*.{php,html,htm}', path.source + '/*.{php,html,htm}'], {base: './src'})
+  return gulp.src([path.source + 'php/*.{php,html,htm}', path.source + '*.{php,html,htm}'], {base: './src'})
     .pipe(gulp.dest(path.dist))
     .pipe(browserSync.stream());
 });
@@ -281,7 +281,7 @@ gulp.task('watchphp', function() {
   gulp.watch([path.source + 'js/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'img/**/*'], ['images']);
-  gulp.watch([path.source + '/php/*.{php,html,htm}', path.source + '/*.{php,html,htm}'], ['template']);
+  gulp.watch([path.source + 'php/*.{php,html,htm}', path.source + '*.{php,html,htm}'], ['template']);
   gulp.watch(['bower.json', 'src/manifest.json'], ['build']);
 });
 
