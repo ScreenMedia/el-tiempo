@@ -1,29 +1,49 @@
 body {
-	background: url(../img/bg-lg.jpg) center center transparent;
+	background: url(../img/bg-lg.jpg) center 0 transparent;
 	background-size: auto 100%;
 	min-width: 100vw;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
-#tiempo {
-	width: 500px;
+.titulo {
+	color: #FFFFFF;
+	font-size: 44px;
+	text-align: center;
+}
+.tiempo {
+	width: 900px;
 	margin: 0px auto;
 	text-align: center;
 	text-transform: uppercase;
 
 	ul {
 		display: flex;
-		margin: 0;
+		justify-content: space-around;
+		margin: 15px 0 0;
 		padding: 0;
 
 		li {
-			background: rgba(255,255,255,0.90);
+			background: rgba(255,255,255,1);
 			border-radius: 5px;
+			border: 3px solid #2C4681;
+			color: #2C4681;
+			display: block;
 			list-style: none;
-			padding: 20px;
+			padding: 10px;
+			text-align: center;
+			width: 250px;
 
-			span {
+			.dia {
 				display: block;
+				font-size: 24px;
+			}
+			.icono-tiempo {
+				color: #2C4681;
+				font: 160px/180px weather;
+			}
+			.temperatura {
+				font-size: 24px;
 			}
 		}
 	}
@@ -33,14 +53,6 @@ body {
 	}
 }
 
-i {
-	color: #000;
-	font-family: weather;
-	font-size: 250px;
-	font-weight: normal;
-	font-style: normal;
-	line-height: 1.0;
-}
 .icon-0:before { content: ":"; }
 .icon-1:before { content: "p"; }
 .icon-2:before { content: "S"; }

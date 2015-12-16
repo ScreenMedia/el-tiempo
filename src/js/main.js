@@ -1,7 +1,7 @@
 $(appStart);
 
 function appStart() {
-	var $tiempo = $("#tiempo").find('ul');
+	var $tiempo = $(".tiempo").find('ul');
 
 	$.simpleWeather({
 		location: 'Montevideo, UY',
@@ -11,7 +11,7 @@ function appStart() {
 			var html = '';
 
 			for(var i = 0; i < 3; i++) {
-				html += '<li'+ (i !== 0 ? '' : ' class="tiempo-hoy"') +'><span>'+ diaTranslate(weather.forecast[i].day, i) +'</span><i class="icon-'+ weather.forecast[i].code +'"></i> '+ weather.forecast[i].high +'&deg;C</li>';
+				html += '<li'+ (i !== 0 ? '' : ' class="tiempo-hoy"') +'><div class="dia">'+ diaTranslate(weather.forecast[i].day, i) +'</div><i class="icono-tiempo icon-'+ weather.forecast[i].code +'"></i><div class="temperatura">'+ weather.forecast[i].high +'&deg;C</div></li>';
 				console.log(weather.forecast[i].day);
 			}
 
