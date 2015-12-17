@@ -8,11 +8,17 @@ body {
 
 .titulo {
 	color: #FFFFFF;
-	font-size: 44px;
+	font-size: 45px;
 	text-align: center;
+	text-shadow: 0px -1px 3px rgba(43, 65, 123, 0.74);
+
+	img {
+		position: relative;
+		top: 4px;
+	}
 }
 .tiempo {
-	width: 900px;
+	width: 750px;
 	margin: 0px auto;
 	text-align: center;
 	text-transform: uppercase;
@@ -20,14 +26,14 @@ body {
 	ul {
 		display: flex;
 		justify-content: space-around;
-		margin: 15px 0 0;
+		margin: 25px 0 0;
 		padding: 0;
 
 		li {
-			background: rgba(255,255,255,1);
+			background: none;
 			border-radius: 5px;
-			border: 3px solid #2C4681;
-			color: #2C4681;
+			border: none;
+			color: #FFFFFF;
 			display: block;
 			list-style: none;
 			padding: 10px;
@@ -37,13 +43,16 @@ body {
 			.dia {
 				display: block;
 				font-size: 24px;
+				text-shadow: 0px -1px 3px rgba(43, 65, 123, 0.74);
 			}
 			.icono-tiempo {
-				color: #2C4681;
-				font: 160px/180px weather;
+				color: #FFFFFF;
+				font: 180px/155px weather;
+				text-shadow: 0px -1px 3px rgba(43, 65, 123, 0.74);
 			}
 			.temperatura {
 				font-size: 24px;
+				text-shadow: 0px -1px 3px rgba(43, 65, 123, 0.74);
 			}
 		}
 	}
