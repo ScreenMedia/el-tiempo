@@ -16,3 +16,65 @@ $brand-primary:         #27ae60;
 // -------------------------
 
 $icon-font-path:        "../bootstrap/fonts/bootstrap/";
+
+$sombra-gral: 0 -1px 1px rgb(76, 120, 175);
+
+@keyframes spin {
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes cloud {
+	0% { opacity: 0; }
+	50% { opacity: 0.8; }
+	100% {
+		opacity: 0;
+		transform: scale(0.5) translate(-200%, -3em);
+	}
+}
+
+@keyframes rain {
+	0% {
+		background: #1EA1C1;
+		box-shadow:
+		0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+		-0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+		-1.375em -0.125em 0 #1EA1C1;
+	}
+	25% {
+		box-shadow:
+		0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+		-0.875em 1.125em 0 -0.125em #1EA1C1,
+		-1.375em -0.125em 0 rgba(255,255,255,0.2);
+	}
+	50% {
+		background: rgba(255,255,255,0.3);
+		box-shadow:
+		0.625em 0.875em 0 -0.125em #1EA1C1,
+		-0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+		-1.375em -0.125em 0 rgba(255,255,255,0.2);
+	}
+	100% {
+		box-shadow:
+		0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+		-0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+		-1.375em -0.125em 0 #1EA1C1;
+	}
+}
+
+@keyframes lightning {
+	45% {
+		color: #fff;
+		background: #fff;
+		opacity: 0.2;
+	}
+	50% {
+		color: #0cf;
+		background: #0cf;
+		opacity: 1;
+	}
+	55% {
+		color: #fff;
+		background: #fff;
+		opacity: 0.2;
+	}
+}

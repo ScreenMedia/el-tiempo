@@ -1,1 +1,4 @@
-<?php echo "Solo existo para que funcione heroku"; ?>
+<?php 
+	header("Location: ./index.html");
+	die();
+?>
